@@ -1,0 +1,115 @@
+/* {
+  box-sizing: border-box;
+}
+*/
+
+body {
+  background-color: #1e176c;
+}
+
+.App {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  padding-top: 30px;
+  width: 15.5rem;
+}
+
+section {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+}
+
+.todaystasks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+h2 {
+  color: #98b4ff;
+  display: block;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  user-select: none;
+  width: 15rem;
+  padding: 5px;
+  height: 2.3rem;
+  font-size: 1rem;
+  background-origin: 10px;
+  background: linear-gradient(135deg, #8f6bff 0%, #8043f7 50%, #e35ed3 100%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  cursor: move;
+}
+
+.item .caption {
+  padding-left: 5px;
+  color: white;
+  width: 77%;
+  overflow: hidden;
+  text-align: left;
+}
+
+.item .caption.complete {
+  text-decoration: line-through;
+}
+
+.icon.delete::before {
+  position: absolute;
+  left: 13.8rem;
+  top: -0.65rem;
+  content: "x";
+  color: #1e176c;
+}
+.icon.delete {
+  position: absolute;
+}
+
+.icon {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.icon.complete::before {
+  content: "✓";
+  color: white;
+}
+
+.icon.complete {
+  background-color: #173588;
+  border: #1e176c solid 2px;
+
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+}
+
+.icon.incomplete {
+  border: #ff59c8 solid 2px;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+}
+
+input {
+  border-radius: 10px;
+  padding: 5px;
+  padding-left: 13px;
+  margin-top: 5px;
+
+  width: 14.3rem;
+  height: 2.3rem;
+  font-size: 1rem;
+}
